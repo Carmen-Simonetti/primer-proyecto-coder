@@ -1,15 +1,19 @@
 <!DOCTYPE html> <!--tipo de doc-->
-<html lang="en"> <!--html en este caso el lenguaje q vamos a utilizar aca o sea es el PADRE de las etiquetas-->
+<html lang="en"> <!--html en este caso el lenguaje q vamos a utilizar-->
 
 <head>
     <meta charset="UTF-8"> <!--tipo de sintaxis tipo de escritura-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- etiqueta con atributo para adaptarse a diferentes dispositivos-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+    <!--boostrap iconos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!--boostrap-->
     <link rel="stylesheet" href="./css/style.css">
+    <!--css-->
     <title>floridashoppingcar</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg"> <!--contiene flex-wrap para que mis elementos estén alineados-->
@@ -25,8 +29,8 @@
                     <!--div desde nosotros hasta search-->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--lista desde nosotros hasta productos-->
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="./pages/conocemassobrenosotros.html">Conocé más sobre nosotros</a>
+                            <a class="nav-link" aria-current="page" href="./pages/conocemassobrenosotros.html">Conocé
+                                más sobre nosotros</a>
                         </li>
                         <li class="nav-item dropdown"> <!--Productos-->
                             <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button"
@@ -92,11 +96,11 @@
             </div>
         </section>
         <section class="experiencias">
-        <div class="linea-divisoria">
-            <div></div> <!--estoy usando un div para generar la linea-->
-            <h5> Algunos trabajos</h5>
-            <div></div> <!--estoy usando un div para generar la linea-->
-        </div>
+            <div class="linea-divisoria">
+                <div></div> <!--estoy usando un div para generar la linea-->
+                <h5> Algunos trabajos</h5>
+                <div></div> <!--estoy usando un div para generar la linea-->
+            </div>
             <h6>¿Qué estás esperando para hacer tu cambio?</h6>
             <div class="antes-clio">
                 <img src="img/bordo.png" alt="">
@@ -138,47 +142,48 @@
                 <img src="img/fitito.png" alt="">
                 <p>Cambio de aceite a Fiat 600 modelo 1980</p>
             </div>
-        </section>
-        <style>
-   
-    dialog::backdrop {
-      background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-      backdrop-filter: blur(5px); /* Efecto de desenfoque */
-    }
-    button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      background-color: #007BFF;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <button id="openModal">Video</button>
+            <div>
+            <style>
+                dialog::backdrop {
+                    backdrop-filter: blur(5px);
+                    /* Efecto de desenfoque */
+                }
 
-  <dialog id="modal">
-    <video width="400" height="300" controls><source src="./img/cambio-de-aceite.mp4" type="video/mp4"></video>
-    <button id="closeModal">Salir</button>
-  </dialog>
+                button {
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: brown;
+                    color: white;
+                    cursor: pointer;
+                }
 
-  <script>
-    const modal = document.getElementById('modal');
-    const openModal = document.getElementById('openModal');
-    const closeModal = document.getElementById('closeModal');
+                button:hover {
+                    background-color: brown
+                }
+            
+            </style>
+            <button id="openModal">Cambio de aceite Peugeot</button>
 
-    openModal.addEventListener('click', () => modal.showModal());
-    closeModal.addEventListener('click', () => modal.close());
-  </script> 
-        <section>
+            <dialog id="modal">
+                <video width="600" height="500" controls>
+                    <source src="./img/cambio-de-aceite.mp4" type="video/mp4">
+                </video>
+                <button id="closeModal">Salir</button>
+            </dialog>
 
+            <script>
+                const modal = document.getElementById('modal');
+                const openModal = document.getElementById('openModal');
+                const closeModal = document.getElementById('closeModal');
+
+                openModal.addEventListener('click', () => modal.showModal());
+                closeModal.addEventListener('click', () => modal.close());
+            </script>
+            </div>
         </section>
     </main>
-    <footer class="block-element">
+    <footer class="footer">
         <a href="https://www.instagram.com/lubricentrofloridashoppingcar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"><img src="img/instagram.png" alt=""></a>
         <a href="https://www.facebook.com/profile.php?id=61575339303053" target="_blank"><img src="img/facebook.png"
