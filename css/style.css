@@ -599,12 +599,30 @@ display: flex;
     background-attachment: fixed;
 }
 
-
+/*!----------MEDIA QUERY----------------*/
+@media screen and (max-width:827px) {
+.hero-productos div{
+flex-direction: column;
+width: 300px;
+}
+.div-productos {
+    display: flex;
+    justify-items: center;
+    width: 100%;
+}
+h2 {
+    font-size: 40px;
+}
+.hero-productos p {
+    font-size: 30px;
+}
+}
 /*?------MEDIA QUERY-------*/
 @media screen and (max-width:351px) {
 .logo {
     display: none;
 }
+
     h1 {
         font-size: 40px;
         display: flex;
@@ -623,6 +641,7 @@ h1::after {
 
     .header {
         position: sticky;
+        top: 0;
     }
     h2 {
         text-align: center;
