@@ -603,9 +603,6 @@ h3 {
 
 /*!----------MEDIA QUERY----------------*/
 
-
-
-
 @media screen and (max-width:1497px) {
     .linea-divisoria {
         display: none;
@@ -1189,14 +1186,13 @@ width: 650px;
 @media screen and (max-width: 714px) {
     .nosotros-centro p {
 width: 499px;}
-    }
 .entrada img {
     width: 499px;
 }
 .entrada p{
 width: 499px;
 }
-.entrada{height: 90vh;}
+.entrada{height: 90vh;} }
 @media screen and (max-width: 684px) {
 .marcass {
     display: grid;
