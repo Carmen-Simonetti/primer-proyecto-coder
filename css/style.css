@@ -1231,8 +1231,12 @@ width: 499px;
         height: 80vh;
     }
 
-        .nosotros-centro p {
-        height: 90vh;
+    .nosotros-centro p {
+        height: 125vh;
+        width: 
+        349px;
+        display: grid;
+        grid-template-columns: 1fr;
 }
 .entrada {
     height: 120vh;
